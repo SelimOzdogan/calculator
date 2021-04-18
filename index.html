@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script/script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header></header>
+    <section>
+        <form name="calculator" action='' method='GET'>
+            <fieldset>
+                <legend>My calculator</legend>
+                <textarea name="output" id="output" rows="7" cols="30"></textarea>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Input</legend>
+                <div class="operands">
+                    <label for="input1">Operands:</label>
+                    <input name="input1" id="input1" type="text">
+                    <input name="input2" id="input2" type="text">
+                </div>
+                <div class="operator">
+                    <label for="btnadd">Operator:</label>
+                    <input type="button" name="btnadd" value="+" onclick="fAdd()">
+                    <input type="button" name="btnmulti" value="&times;" onclick="fMulti()">
+                    <input type="button" name="btndivide" value=":" onclick="fDivide()">
+                    <input type="button" name="btnclear" value="clear" onclick="fClear()">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
